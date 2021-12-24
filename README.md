@@ -1,15 +1,20 @@
-# Basic Sample Hardhat Project
+# WavePortal
+The frontend of the dapp is available [here](https://github.com/sbhbenjamin/waveportal-frontend)<br />
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+The backend of a dapp that allows people to send me waves through the ethereum blockchain, and stand a chance to gain some ether. The frontend is built on React, and the smart contract is powered by Solidity. Hardhat was used in the development of the smart contract. The dapp is live running the contract off the Rinkeby network.
 
-Try running some of the following tasks:
+### Prerequisites
+Node.js v14+<br />
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+## Getting started
+Install dependencies: 
+```
+npm install
+```
+
+Local deployment
+```
+npx hardhat node // Start your local hardhat node
+npx hardhat run scripts/deploy.js --network localhost // Deploy contract to local hardhat node
+npx hardhat run scripts/deploy.js --network rinkeby // Deploy contract to rinkeby testnet
 ```
